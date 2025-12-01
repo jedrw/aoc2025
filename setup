@@ -3,7 +3,7 @@
 DAY=${1}
 PART=${2}
 
-if [[ -z "${SESSION}" ]]; then 
+if [[ -z "${AOC_SESSION}" ]]; then 
     echo "SESSION is unset"  
     exit 1
 fi
