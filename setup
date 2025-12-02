@@ -22,7 +22,7 @@ fi
 if [[ "${PART}" == "1" ]]; then 
     cp -r day0 "day${DAY}"
     find ./day${DAY} -type f | xargs sed -i "s/day0/day${DAY}/g" 
-    curl https://adventofcode.com/2025/day/${DAY}/input -H "Cookie: session=${AOC_SESSION}" -o ./day${DAY}/input
+    curl https://adventofcode.com/2025/day/${DAY}/input -H "Cookie: session=${AOC_SESSION}" -o ./day${DAY}/input.txt
 fi
 
 if [[ "${PART}" == "2" ]]; then 
